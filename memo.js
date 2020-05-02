@@ -69,10 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function mezclarCartas() {
-    for (i = 0; i < cartasArray.length * 5; i++) {
-      boleta = Math.floor(Math.random() * cartasArray.length);
-      cartasArray.push(cartasArray.splice(boleta, 1)[0]);
-    }
+    cartasArray.sort(() => 0.5 - Math.random());
   }
 
   function comparar() {
